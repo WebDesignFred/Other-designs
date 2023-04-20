@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+  <h1>ALFREDO'S CSS DOJO</h1>
+  <p>with mobile-friendly design choices</p>
+</div>
+<section>
+<h2>Our Memberships</h2>
+     <fieldset>
+  <label id = "basic">Basic<scan id = "price">$19/month</scan></label>
+     </fieldset>
+     <fieldset>
+  <label id = "next">Premium<scan id = "price">$29/month</scan></label>  
+     </fieldset>
+     <fieldset>
+  <label id = "elite">Elite<scan id = "price">$39/month</scan></label>
+      </fieldset>
+      <fieldset>
+<label id = "hero">Hero<scan id = "price">$49/month</scan></label>
+</fieldset>
+ </section>
+</body>
+</html>
+
+/* CSS styles */
+div {display: flex; flex-direction: column;
+font-family: Georgia, sans-serif; text-align: center;
+color: #fff; background: url(https://avatars.dzeninfra.ru/get-zen_doc/5238996/pub_636b883e6adfa21ef5f0bfb1_636b884e6adfa21ef5f0c16b/scale_1200);
+background-size: cover; background-repeat: no-repeat; 
+align-items: center; max-width: 800px; margin: 0 auto; padding-bottom: 50px}
+section {display: flex; flex-direction: column; align-items: center; justify-content: center; 
+  width: 100%; max-width: 1000px; margin: 0 auto;}
+fieldset {max-width: 800px; width: 100%; margin: 0; border: none}
+label[id = "basic"] {display: block; height: 200px; background: url(https://townsquare.media/site/911/files/2020/06/RS28366_ThinkstockPhotos-655781960-scr.jpg?w=1200&amp;h=0&amp;zc=1&amp;s=0&amp;a=t&amp;q=89);
+background-size: cover; background-repeat: no-repeat}
+label[id = "next"] {display: block; height: 200px; background: url(https://www.fitnessmentors.com/wp-content/uploads/2019/02/Fitness-Mentors-NASM-1000x678.jpg); 
+background-size: cover; background-repeat: no-repeat}
+label[id = "elite"] {display: block; height: 200px; background: url(https://www.muscleandfitness.com/wp-content/uploads/2018/04/1109-seated-bicep-curl0.jpg?w=1280&h=708&crop=1&quality=86&strip=all);
+background-size: cover; background-repeat: no-repeat}
+label[id = "hero"] {display: block; height: 200px; background: url(https://medaboutme.ru/upload/medialibrary/046/shutterstock_224472037.jpg);
+background-size: cover; background-repeat: no-repeat}
+fieldset {font-size: 40px; color: #fff; font-family: serif; text-align: center}
+scan[id = "price"] {display: block; margin-top: 90px} 
