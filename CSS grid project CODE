@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "styles.css">
+<title>Alfredo's CSS Grid debut</title>
+</head>
+<body>
+<header class = "header">
+<h1 id="welcome">Hi. I'm Alfredo</h1>
+<p>An aspiring web developer</p>
+<p>HTML/CSS skilled. Currently learning Javascript</p>
+<p>Welcome to my CSS Grid project (newsletter)</p>
+<a href = "https://github.com/WebDesignFred"><img class = "logo" src = "https://i.pinimg.com/originals/b5/1b/78/b51b78ecc9e5711274931774e433b5e6.png"></a>
+<a href = "https://radiant-alsando1.wordpress.com/"><img class = "logo" src = "https://lh5.googleusercontent.com/proxy/tTtoD3tzhWuIOtK7rSnNW5AFQ7cC1jcw2UmCEmwpLswCaqfJgvqdtWb4nCI8VJoH_NZE1QfhhbSJ7shZOQUa7avInIefgtMduVPxCyiGyB6IaelnUDKIby6q4tFYjcu1Ma8m7as04doZvw832ZQxC-xfZ-MgJxzcm6pSIvU8Zg_eZJyqpE6H8vjg5VyAfrpFWOtkRjM=w1200-h630-p-k-no-nu"></a>
+</header>
+<blockquote class = "blockquote">
+  <hr>
+  <p class = "quote">“As is a tale, so is life: not how long it is, but how good it is, is what matters.”
+  <p class = "quote-author"><i>Seneca</i><p>
+   <section>
+   <img src = "https://cdn.pixabay.com/photo/2021/05/24/17/44/seneca-6279972_1280.png" class = "test"> 
+ </section>
+  <p class = "quote">“The time will come when diligent research over long periods will bring to light things which now lie hidden. A single lifetime, even though entirely devoted to the sky, would not be enough for the investigation of so vast a subject... And so this knowledge will be unfolded only through long successive ages. There will come a time when our descendants will be amazed that we did not know things that are so plain to them... Many discoveries are reserved for ages still to come, when memory of us will have been effaced.”</p>
+  <hr>  
+</blockquote>
+<section class = "timeline">
+  <ul>
+    <h2><u>Where I've Been</u></h2>
+  <li>
+   <h3>2020</h3>
+   <p>Graduated from the University of North Texas</p>
+   <p><i>B.B.A. in Business Economics</i></p>
+ </li>
+  <li>
+   <h3>2021-2023</h3>
+   <p>Worked a variety of jobs and learned some PowerBI, R, SQL, and Python recreationally</p>
+   <p><i>not really for me</i></p>
+ </li>
+  <li>
+   <h3>April 2023</h3>
+   <p>I discovered web development and web design!</p>
+   <p><i>What do you think so far?</i></p>
+ </li>
+  <li>
+   <h3>The future</h3>
+   <p>The sky's the limit!</p>
+ </li> 
+</ul>
+</section>
+</body>
+</html>
+
+/* CSS styles */
+*, ::before, ::after {box-sizing: border-box}
+header {text-align: center; width: 100%;
+font-family: system-ui, sans-serif;
+color: #000;
+}
+.quote {text-align: center}
+li {list-style-type: none}
+h2 {text-align: center}
+.logo {width: 2rem; height: 2rem; margin-bottom: 2%}
+.quote-author {text-align: center}
+.blockquote {width: 100%; margin: 5px auto}
+.timeline {color: #000; text-align: center;
+  font-family: system-ui; width: 100%}
+body {display: grid; grid-template-columns: 20% 40% 25%; gap: 3rem}
+.test {margin: 5% auto; width: 40vw; height: 20vh; object-fit: fill; 
+  max-width: 300px; display: flex}
+@media only screen and (max-width: 700px) {body {display: grid; grid-template-columns: 1fr} .test {display: flex} 
+  .timeline {display: flex; justify-content: center; align-items: center; margin-left: -15px; margin-top: -10%} h2{margin-right: 5px}
+  blockquote {text-align: center}}
